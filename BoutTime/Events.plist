@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>description</key>
+		<string>St. Jerome finished the Vulgate.</string>
+		<key>date</key>
+		<date>405-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Vulgate</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Rome is sacked by Alaric, King of the Visigoths.</string>
+		<key>date</key>
+		<date>410-08-24T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Sack_of_Rome_(410)</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Council of Ephesus</string>
+		<key>date</key>
+		<date>431-06-22T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Council_of_Ephesus</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Rome is sacked by Genseric, King of the Vandals.</string>
+		<key>date</key>
+		<date>455-06-02T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Sack_of_Rome_(455)</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Odoacer deposes the Roman Emperor Romulus Augustulus</string>
+		<key>date</key>
+		<date>476-09-04T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Odoacer</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Death of Julius Nepos, last Roman Emperor to be recognized as such by the Roman Senate and the Eastern court</string>
+		<key>date</key>
+		<date>480-04-25T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Julius_Nepos</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Battle of Mons Badonicus.</string>
+		<key>date</key>
+		<date>500-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Battle_of_Badon</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Battle of Mons Badonicus.</string>
+		<key>date</key>
+		<date>507-04-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Battle_of_Vouillé</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Boethius writes his Consolation of Philosophy</string>
+		<key>date</key>
+		<date>524-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/The_Consolation_of_Philosophy</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Dionysius Exiguus publishes the Dionysius Exiguus&apos; Easter table.</string>
+		<key>date</key>
+		<date>525-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Dionysius_Exiguus%27_Easter_table</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Justinian I publishes the Code of Civil Law.</string>
+		<key>date</key>
+		<date>529-04-07T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Corpus_Juris_Civilis</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Nika Riots in Constantinople.</string>
+		<key>date</key>
+		<date>532-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Nika_riots</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Byzantines, under Belisarius, retake North Africa from the Vandals.</string>
+		<key>date</key>
+		<date>533-12-15T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Belisarius</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Gothic War in Italy as a part of Justinian&apos;s Reconquest.</string>
+		<key>date</key>
+		<date>535-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Gothic_War_(535–554)</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Saint Columba founds mission in Iona.</string>
+		<key>date</key>
+		<date>563-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Columba</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The Kingdom of the Lombards is founded in Italy.</string>
+		<key>date</key>
+		<date>568-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Kingdom_of_the_Lombards</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Muhammad is born.</string>
+		<key>date</key>
+		<date>570-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Muhammad</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The West Saxons continue their advance at the Battle of Deorham.</string>
+		<key>date</key>
+		<date>577-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Battle_of_Deorham</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Gregory the Great becomes Pope.</string>
+		<key>date</key>
+		<date>590-09-08T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Pope_Gregory_I</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Augustine arrives in Kent.</string>
+		<key>date</key>
+		<date>597-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Augustine_of_Canterbury</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Last great Roman-Persian War.</string>
+		<key>date</key>
+		<date>602-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Roman–Persian_Wars#Climax</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Muhammad Migrates from Mecca to Medina.</string>
+		<key>date</key>
+		<date>622-09-09T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Hegira</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Joint Persian-Avar-Slav Siege of Constantinople</string>
+		<key>date</key>
+		<date>626-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Siege_of_Constantinople_(626)</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Battle of Nineveh.</string>
+		<key>date</key>
+		<date>627-12-12T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Battle_of_Nineveh_(627)</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Death of Muhammad.</string>
+		<key>date</key>
+		<date>632-06-08T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Muhammad</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Battle of Heavenfield.</string>
+		<key>date</key>
+		<date>634-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Battle_of_Heavenfield</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Jerusalem captured by the Arab army, mostly Muslims, but with contingents of Syrian Christians.</string>
+		<key>date</key>
+		<date>636-11-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(636–637)</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Arab Army led by &apos;Amr ibn al-&apos;As takes Alexandria.</string>
+		<key>date</key>
+		<date>641-03-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Siege_of_Alexandria_(641)</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Battle of Nehawand. Muslims conquer Persia.</string>
+		<key>date</key>
+		<date>642-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Battle_of_Nahāvand</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Synod of Whitby.</string>
+		<key>date</key>
+		<date>664-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Synod_of_Whitby</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>First Arab siege of Constantinople.</string>
+		<key>date</key>
+		<date>674-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Siege_of_Constantinople_(674–678)</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Establishment of the Bulgarian Empire.</string>
+		<key>date</key>
+		<date>681-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/First_Bulgarian_Empire</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Battle of Dun Nechtain.</string>
+		<key>date</key>
+		<date>685-05-20T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Battle_of_Dun_Nechtain</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Battle of Tertry</string>
+		<key>date</key>
+		<date>687-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Battle_of_Tertry</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Arab army takes Carthage.</string>
+		<key>date</key>
+		<date>698-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Battle_of_Carthage_(698)</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Umayyad conquest of Hispania under Tarik.</string>
+		<key>date</key>
+		<date>711-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Umayyad_conquest_of_Hispania</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Second Arab attack on Constantinople, ending in failure</string>
+		<key>date</key>
+		<date>717-08-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Siege_of_Constantinople_(717–718)</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Iconoclast movement begun in the Byzantine Empire under Leo III.</string>
+		<key>date</key>
+		<date>726-01-01T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Leo_III_the_Isaurian</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Battle of Tours. Charles Martel halts Muslim advance.</string>
+		<key>date</key>
+		<date>732-10-10T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Battle_of_Tours</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Death of Bede.</string>
+		<key>date</key>
+		<date>735-05-26T18:52:58Z</date>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Bede</string>
+	</dict>
+</array>
+</plist>
