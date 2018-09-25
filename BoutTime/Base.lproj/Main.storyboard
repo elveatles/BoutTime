@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,227 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BoutTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Shake To Complete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tC6-Yr-Fih">
+                                <rect key="frame" x="113.5" y="626.5" width="148.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.56862745098039214" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="0:60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kc6-s1-53T">
+                                <rect key="frame" x="135" y="570.5" width="105" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Knt-m4-iSn">
+                                <rect key="frame" x="24" y="28" width="327" height="534.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Ae8-se-PTw">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="127.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="c0l-Ha-ztB">
+                                                <rect key="frame" x="0.0" y="0.0" width="283" height="127.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <state key="normal" title="Sputnick was launched by the USSR">
+                                                    <color key="titleColor" red="0.0" green="0.37254901959999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zj-7y-Yjh">
+                                                <rect key="frame" x="283" y="0.0" width="44" height="127.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="0Zj-7y-Yjh" secondAttribute="height" multiplier="158:457" id="geJ-oT-RnY"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="down_full"/>
+                                                <state key="highlighted" backgroundImage="down_full_selected"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="jiQ-w5-aLM">
+                                        <rect key="frame" x="0.0" y="135.5" width="327" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Rsa-3w-duL">
+                                                <rect key="frame" x="0.0" y="0.0" width="283" height="128"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <state key="normal" title="Sputnick was launched by the USSR">
+                                                    <color key="titleColor" red="0.0" green="0.37254901959999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cVa-Jm-a97">
+                                                <rect key="frame" x="283" y="0.0" width="44" height="128"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4YB-hO-dss">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="64"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="4YB-hO-dss" secondAttribute="height" multiplier="158:229" id="xLN-pK-n8c"/>
+                                                        </constraints>
+                                                        <state key="normal" backgroundImage="up_half"/>
+                                                        <state key="highlighted" backgroundImage="up_half_selected"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aw-IK-GYO">
+                                                        <rect key="frame" x="0.0" y="64" width="44" height="64"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="4aw-IK-GYO" secondAttribute="height" multiplier="158:229" id="sg4-33-r45"/>
+                                                        </constraints>
+                                                        <state key="normal" backgroundImage="down_half"/>
+                                                        <state key="selected" backgroundImage="down_half_selected"/>
+                                                        <state key="highlighted" backgroundImage="down_half_selected"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="hkg-XF-iDF">
+                                        <rect key="frame" x="0.0" y="271.5" width="327" height="127.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Yb8-MN-xfi">
+                                                <rect key="frame" x="0.0" y="0.0" width="283" height="127.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <state key="normal" title="Sputnick was launched by the USSR">
+                                                    <color key="titleColor" red="0.0" green="0.37254901959999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZKg-zX-u1K">
+                                                <rect key="frame" x="283" y="0.0" width="44" height="127.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcX-YT-4gQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="63.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="RcX-YT-4gQ" secondAttribute="height" multiplier="158:229" id="BWf-Cn-tEK"/>
+                                                        </constraints>
+                                                        <state key="normal" backgroundImage="up_half"/>
+                                                        <state key="highlighted" backgroundImage="up_half_selected"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKE-Tg-iD2">
+                                                        <rect key="frame" x="0.0" y="63.5" width="44" height="64"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="GKE-Tg-iD2" secondAttribute="height" multiplier="158:229" id="3Sb-oR-GOR"/>
+                                                        </constraints>
+                                                        <state key="normal" backgroundImage="down_half"/>
+                                                        <state key="highlighted" backgroundImage="down_half_selected"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="C97-vJ-8Tl">
+                                        <rect key="frame" x="0.0" y="407" width="327" height="127.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ClP-Y2-w3W">
+                                                <rect key="frame" x="0.0" y="0.0" width="283" height="127.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <state key="normal" title="Sputnick was launched by the USSR">
+                                                    <color key="titleColor" red="0.0" green="0.37254901960784315" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nq6-Hh-AOP">
+                                                <rect key="frame" x="283" y="0.0" width="44" height="127.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="nq6-Hh-AOP" secondAttribute="height" multiplier="158:457" id="Px6-CO-2Gs"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="up_full"/>
+                                                <state key="highlighted" backgroundImage="up_full_selected"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xx-Rn-dD6">
+                                <rect key="frame" x="105" y="576.5" width="165" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3Xx-Rn-dD6" secondAttribute="height" multiplier="558:142" id="rgD-k9-ond"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="next_round_success"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.15294117647058825" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kc6-s1-53T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Axj-9t-OkT"/>
+                            <constraint firstItem="tC6-Yr-Fih" firstAttribute="top" secondItem="kc6-s1-53T" secondAttribute="bottom" constant="-4" id="CS0-jv-DEp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tC6-Yr-Fih" secondAttribute="bottom" constant="20" id="Chy-gk-Dnz"/>
+                            <constraint firstItem="tC6-Yr-Fih" firstAttribute="top" secondItem="3Xx-Rn-dD6" secondAttribute="bottom" constant="8" id="Csz-Xw-hwu"/>
+                            <constraint firstItem="Knt-m4-iSn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="NUS-Fm-tHm"/>
+                            <constraint firstItem="3Xx-Rn-dD6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NXJ-66-EfK"/>
+                            <constraint firstItem="3Xx-Rn-dD6" firstAttribute="height" secondItem="kc6-s1-53T" secondAttribute="height" multiplier="0.7" id="WHn-qa-Veb"/>
+                            <constraint firstItem="kc6-s1-53T" firstAttribute="top" secondItem="Knt-m4-iSn" secondAttribute="bottom" constant="8" id="c1T-UQ-KJO"/>
+                            <constraint firstItem="tC6-Yr-Fih" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cDl-NG-Lc6"/>
+                            <constraint firstItem="Knt-m4-iSn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="j1V-C1-6k4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Knt-m4-iSn" secondAttribute="trailing" constant="24" id="shG-KK-i6P"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="a2d-Wc-dfV" kind="presentation" id="cHl-C4-0V0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WC9-jj-uo7">
+            <objects>
+                <viewController id="a2d-Wc-dfV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L6T-WN-LBU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzf-AK-maH">
+                                <rect key="frame" x="145.5" y="240" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.56862745100000001" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4/6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgo-kl-4DN">
+                                <rect key="frame" x="150" y="261" width="75" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhw-sb-a2N">
+                                <rect key="frame" x="119.5" y="373" width="136" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="OQA-bm-tHQ"/>
+                                    <constraint firstAttribute="height" constant="41" id="wjj-rS-tOY"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="play_again"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.1529411765" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tzf-AK-maH" firstAttribute="centerX" secondItem="L6T-WN-LBU" secondAttribute="centerX" id="D3f-cV-k2H"/>
+                            <constraint firstItem="hhw-sb-a2N" firstAttribute="top" secondItem="zgo-kl-4DN" secondAttribute="bottom" constant="54" id="EeM-Ld-nHs"/>
+                            <constraint firstItem="zgo-kl-4DN" firstAttribute="top" secondItem="tzf-AK-maH" secondAttribute="bottom" id="Q0a-Rz-dWD"/>
+                            <constraint firstItem="hhw-sb-a2N" firstAttribute="centerY" secondItem="L6T-WN-LBU" secondAttribute="centerY" constant="60" id="Zhf-Ac-spC"/>
+                            <constraint firstItem="zgo-kl-4DN" firstAttribute="centerX" secondItem="L6T-WN-LBU" secondAttribute="centerX" id="dXR-DG-LC3"/>
+                            <constraint firstItem="hhw-sb-a2N" firstAttribute="centerX" secondItem="L6T-WN-LBU" secondAttribute="centerX" id="gHi-kq-pNI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gs8-HE-zsh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Vp-e4-YcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="down_full" width="158" height="457"/>
+        <image name="down_full_selected" width="158" height="457"/>
+        <image name="down_half" width="158" height="229"/>
+        <image name="down_half_selected" width="158" height="229"/>
+        <image name="next_round_success" width="558" height="142"/>
+        <image name="play_again" width="450" height="142"/>
+        <image name="up_full" width="158" height="457"/>
+        <image name="up_full_selected" width="158" height="457"/>
+        <image name="up_half" width="158" height="229"/>
+        <image name="up_half_selected" width="158" height="229"/>
+    </resources>
 </document>
