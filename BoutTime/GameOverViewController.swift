@@ -12,6 +12,7 @@ class GameOverViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     
     var game: Game!
+    weak var mainViewController: ViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class GameOverViewController: UIViewController {
         updateScore()
     }
     
+    /// Update the score label
     func updateScore() {
         scoreLabel.text = "\(game.numCorrect)/\(game.numRounds)"
     }
@@ -41,8 +43,14 @@ class GameOverViewController: UIViewController {
     */
 
     @IBAction func playAgain() {
-        dismiss(animated: true, completion: {
-            self.game.start()
-        })
+        // Dismiss
+        dismiss(animated: true, completion: nil)
+        
+        // Start a new game
+        if let vc = self.mainViewController {
+            vc.startNewGame()
+        } else {
+            print("Could not start a new game! This should never happen!")
+        }
     }
 }

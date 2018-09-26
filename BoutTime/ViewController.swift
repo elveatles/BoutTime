@@ -19,9 +19,14 @@ class ViewController: UIViewController {
     
     /// If true, dates will be shown with the description
     let helpMode = false
+    /// Date formatter for help mode
     let dateFormatter = DateFormatter()
     
+    /// The object that manages all game logic
     var game: Game!
+    /// The countdown timer for the game
+    var timer: Timer?
+    /// Contains eventButtons 0-4
     var eventButtons: [UIButton] = []
     
     override func viewDidLoad() {
@@ -36,12 +41,22 @@ class ViewController: UIViewController {
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         game = appDelegate.game
-        game.start()
-        updateEventsUI()
+        startNewGame()
     }
     
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         checkEvents()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        
+        // Set GameOverViewController.mainViewController so that it
+        // can call functions on this ViewController.
+        if let destVC = segue.destination as? GameOverViewController {
+            destVC.mainViewController = self
+        }
     }
     
     @IBAction func moveEventDown0() {
@@ -75,8 +90,34 @@ class ViewController: UIViewController {
     }
     
     @IBAction func nextRound() {
+        startRound()
+    }
+    
+    /// Start a new game
+    func startNewGame() {
+        game.newGame()
+        startRound()
+    }
+    
+    /// Start the next round
+    func startRound() {
+        // Hide the "Next Round" button
         showNextRoundUI(false)
+        // Update the events buttons descriptions
         updateEventsUI()
+        
+        // Start the countdown timer
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { [unowned self] (t) in
+            self.game.secondsLeftForRound -= 1
+            self.updateTimerUI()
+            
+            // If the round timed out, check the answer
+            if self.game.roundTimedOut() {
+                self.checkEvents()
+            }
+        })
+        
+        updateTimerUI()
     }
     
     /// Update the UI for the event buttons to match the Game state
@@ -93,10 +134,25 @@ class ViewController: UIViewController {
         }
     }
     
+    /// Update the UI to show the amount of time left for the current round.
+    func updateTimerUI() {
+        // Make seconds zero padded
+        let secondsStr = String(format: "%02d", game.secondsLeftForRound)
+        self.timeLabel.text = "0:\(secondsStr)"
+    }
+    
     /// Check if the events are in the correct order
     func checkEvents() {
+        // Stop the current timer from running
+        if let t = timer {
+            t.invalidate()
+        }
+        
+        // Check if the events are in the correct order
         let correct = game.checkEvents()
         
+        // If this was the last round, show the "Game Over" screen,
+        // otherwise show the "Next Round" button so the user can see if they got the answer correct.
         if game.gameOver() {
             performSegue(withIdentifier: "gameOver", sender: nil)
         } else {
