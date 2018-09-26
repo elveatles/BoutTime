@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091E25CC215C282F00DBCCD3 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091E25CB215C282F00DBCCD3 /* GameOverViewController.swift */; };
 		09B9F88D215AFD16001B7253 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9F88C215AFD16001B7253 /* Event.swift */; };
 		09B9F88F215AFDE7001B7253 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9F88E215AFDE7001B7253 /* Game.swift */; };
 		09B9F891215AFFEB001B7253 /* PListConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9F890215AFFEB001B7253 /* PListConverter.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		091E25CB215C282F00DBCCD3 /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		09B9F88C215AFD16001B7253 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		09B9F88E215AFDE7001B7253 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		09B9F890215AFFEB001B7253 /* PListConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PListConverter.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				09C0D5722159589E00EBA855 /* AppDelegate.swift */,
 				09C0D5742159589E00EBA855 /* ViewController.swift */,
 				09C0D5762159589E00EBA855 /* Main.storyboard */,
+				091E25CB215C282F00DBCCD3 /* GameOverViewController.swift */,
 				09C0D5792159589E00EBA855 /* Assets.xcassets */,
 				09C0D57B2159589E00EBA855 /* LaunchScreen.storyboard */,
 				09C0D57E2159589E00EBA855 /* Info.plist */,
@@ -165,6 +168,7 @@
 				09B9F88F215AFDE7001B7253 /* Game.swift in Sources */,
 				09B9F895215B02CC001B7253 /* EventsUnarchiver.swift in Sources */,
 				09B9F897215B0419001B7253 /* EventError.swift in Sources */,
+				091E25CC215C282F00DBCCD3 /* GameOverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

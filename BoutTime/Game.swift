@@ -45,6 +45,7 @@ class Game {
     /// Start a new game.
     func start() {
         currentRound = 0
+        numCorrect = 0
         setupCurrentRound()
     }
     
@@ -92,6 +93,9 @@ class Game {
         }
         
         let result = sortedEvents == eventsForCurrentRound
+        if result {
+            numCorrect += 1
+        }
         
         currentRound += 1
         setupCurrentRound()
