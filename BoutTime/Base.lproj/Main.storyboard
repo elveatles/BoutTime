@@ -35,11 +35,12 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Ae8-se-PTw">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="127.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="c0l-Ha-ztB">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="c0l-Ha-ztB">
                                                 <rect key="frame" x="0.0" y="0.0" width="283" height="127.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                                <state key="normal" title="Sputnick was launched by the USSR">
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="25" minY="0.0" maxX="25" maxY="0.0"/>
+                                                <state key="normal" title="St. Jerome finished the Vulgate">
                                                     <color key="titleColor" red="0.0" green="0.37254901959999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
@@ -50,17 +51,21 @@
                                                 </constraints>
                                                 <state key="normal" backgroundImage="down_full"/>
                                                 <state key="highlighted" backgroundImage="down_full_selected"/>
+                                                <connections>
+                                                    <action selector="moveEventDown0" destination="BYZ-38-t0r" eventType="touchUpInside" id="lW6-bA-NSj"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="jiQ-w5-aLM">
                                         <rect key="frame" x="0.0" y="135.5" width="327" height="128"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Rsa-3w-duL">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Rsa-3w-duL">
                                                 <rect key="frame" x="0.0" y="0.0" width="283" height="128"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                                <state key="normal" title="Sputnick was launched by the USSR">
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="25" minY="0.0" maxX="25" maxY="0.0"/>
+                                                <state key="normal" title="Rome is sacked by Alaric, King of the Visgoths">
                                                     <color key="titleColor" red="0.0" green="0.37254901959999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
@@ -74,6 +79,9 @@
                                                         </constraints>
                                                         <state key="normal" backgroundImage="up_half"/>
                                                         <state key="highlighted" backgroundImage="up_half_selected"/>
+                                                        <connections>
+                                                            <action selector="moveEventUp1" destination="BYZ-38-t0r" eventType="touchUpInside" id="AvT-jq-Qg9"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aw-IK-GYO">
                                                         <rect key="frame" x="0.0" y="64" width="44" height="64"/>
@@ -83,6 +91,9 @@
                                                         <state key="normal" backgroundImage="down_half"/>
                                                         <state key="selected" backgroundImage="down_half_selected"/>
                                                         <state key="highlighted" backgroundImage="down_half_selected"/>
+                                                        <connections>
+                                                            <action selector="moveEventDown1" destination="BYZ-38-t0r" eventType="touchUpInside" id="BOo-od-vnO"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -91,11 +102,12 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="hkg-XF-iDF">
                                         <rect key="frame" x="0.0" y="271.5" width="327" height="127.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Yb8-MN-xfi">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Yb8-MN-xfi">
                                                 <rect key="frame" x="0.0" y="0.0" width="283" height="127.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                                <state key="normal" title="Sputnick was launched by the USSR">
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="25" minY="0.0" maxX="25" maxY="0.0"/>
+                                                <state key="normal" title="Council of Ephesus">
                                                     <color key="titleColor" red="0.0" green="0.37254901959999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
@@ -109,6 +121,9 @@
                                                         </constraints>
                                                         <state key="normal" backgroundImage="up_half"/>
                                                         <state key="highlighted" backgroundImage="up_half_selected"/>
+                                                        <connections>
+                                                            <action selector="moveEventUp2" destination="BYZ-38-t0r" eventType="touchUpInside" id="NGb-0Q-2vj"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKE-Tg-iD2">
                                                         <rect key="frame" x="0.0" y="63.5" width="44" height="64"/>
@@ -117,6 +132,9 @@
                                                         </constraints>
                                                         <state key="normal" backgroundImage="down_half"/>
                                                         <state key="highlighted" backgroundImage="down_half_selected"/>
+                                                        <connections>
+                                                            <action selector="moveEventDown2" destination="BYZ-38-t0r" eventType="touchUpInside" id="ngf-h8-dgy"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -125,11 +143,12 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="C97-vJ-8Tl">
                                         <rect key="frame" x="0.0" y="407" width="327" height="127.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ClP-Y2-w3W">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ClP-Y2-w3W">
                                                 <rect key="frame" x="0.0" y="0.0" width="283" height="127.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                                <state key="normal" title="Sputnick was launched by the USSR">
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="25" minY="0.0" maxX="25" maxY="0.0"/>
+                                                <state key="normal" title="Rome is sacked by Genseric, King of the Vandals">
                                                     <color key="titleColor" red="0.0" green="0.37254901960784315" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
@@ -140,6 +159,9 @@
                                                 </constraints>
                                                 <state key="normal" backgroundImage="up_full"/>
                                                 <state key="highlighted" backgroundImage="up_full_selected"/>
+                                                <connections>
+                                                    <action selector="moveEventUp3" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eei-uh-Avf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -170,6 +192,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="eventButton0" destination="c0l-Ha-ztB" id="qVD-bg-8qN"/>
+                        <outlet property="eventButton1" destination="Rsa-3w-duL" id="KnZ-12-ycz"/>
+                        <outlet property="eventButton2" destination="Yb8-MN-xfi" id="CN6-VT-LYt"/>
+                        <outlet property="eventButton3" destination="ClP-Y2-w3W" id="i4c-2y-gTf"/>
                         <segue destination="a2d-Wc-dfV" kind="presentation" id="cHl-C4-0V0"/>
                     </connections>
                 </viewController>

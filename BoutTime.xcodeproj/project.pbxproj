@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09B9F88D215AFD16001B7253 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9F88C215AFD16001B7253 /* Event.swift */; };
+		09B9F88F215AFDE7001B7253 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9F88E215AFDE7001B7253 /* Game.swift */; };
+		09B9F891215AFFEB001B7253 /* PListConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9F890215AFFEB001B7253 /* PListConverter.swift */; };
+		09B9F893215B01C1001B7253 /* PListError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9F892215B01C1001B7253 /* PListError.swift */; };
+		09B9F895215B02CC001B7253 /* EventsUnarchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9F894215B02CC001B7253 /* EventsUnarchiver.swift */; };
+		09B9F897215B0419001B7253 /* EventError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9F896215B0419001B7253 /* EventError.swift */; };
 		09C0D5732159589E00EBA855 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C0D5722159589E00EBA855 /* AppDelegate.swift */; };
 		09C0D5752159589E00EBA855 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C0D5742159589E00EBA855 /* ViewController.swift */; };
 		09C0D5782159589E00EBA855 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C0D5762159589E00EBA855 /* Main.storyboard */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09B9F88C215AFD16001B7253 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		09B9F88E215AFDE7001B7253 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		09B9F890215AFFEB001B7253 /* PListConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PListConverter.swift; sourceTree = "<group>"; };
+		09B9F892215B01C1001B7253 /* PListError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PListError.swift; sourceTree = "<group>"; };
+		09B9F894215B02CC001B7253 /* EventsUnarchiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsUnarchiver.swift; sourceTree = "<group>"; };
+		09B9F896215B0419001B7253 /* EventError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventError.swift; sourceTree = "<group>"; };
 		09C0D56F2159589E00EBA855 /* BoutTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoutTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C0D5722159589E00EBA855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C0D5742159589E00EBA855 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +75,12 @@
 				09C0D57B2159589E00EBA855 /* LaunchScreen.storyboard */,
 				09C0D57E2159589E00EBA855 /* Info.plist */,
 				09C0D58421595CDF00EBA855 /* Events.plist */,
+				09B9F88C215AFD16001B7253 /* Event.swift */,
+				09B9F88E215AFDE7001B7253 /* Game.swift */,
+				09B9F890215AFFEB001B7253 /* PListConverter.swift */,
+				09B9F894215B02CC001B7253 /* EventsUnarchiver.swift */,
+				09B9F896215B0419001B7253 /* EventError.swift */,
+				09B9F892215B01C1001B7253 /* PListError.swift */,
 			);
 			path = BoutTime;
 			sourceTree = "<group>";
@@ -140,7 +158,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				09C0D5752159589E00EBA855 /* ViewController.swift in Sources */,
+				09B9F893215B01C1001B7253 /* PListError.swift in Sources */,
+				09B9F891215AFFEB001B7253 /* PListConverter.swift in Sources */,
+				09B9F88D215AFD16001B7253 /* Event.swift in Sources */,
 				09C0D5732159589E00EBA855 /* AppDelegate.swift in Sources */,
+				09B9F88F215AFDE7001B7253 /* Game.swift in Sources */,
+				09B9F895215B02CC001B7253 /* EventsUnarchiver.swift in Sources */,
+				09B9F897215B0419001B7253 /* EventError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
