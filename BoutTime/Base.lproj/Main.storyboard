@@ -43,6 +43,9 @@
                                                 <state key="normal" title="St. Jerome finished the Vulgate">
                                                     <color key="titleColor" red="0.0" green="0.37254901959999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="showEvent0" destination="BYZ-38-t0r" eventType="touchUpInside" id="5FF-cm-CPp"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zj-7y-Yjh">
                                                 <rect key="frame" x="283" y="0.0" width="44" height="127.5"/>
@@ -68,6 +71,9 @@
                                                 <state key="normal" title="Rome is sacked by Alaric, King of the Visgoths">
                                                     <color key="titleColor" red="0.0" green="0.37254901959999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="showEvent1" destination="BYZ-38-t0r" eventType="touchUpInside" id="gs3-0x-wBY"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cVa-Jm-a97">
                                                 <rect key="frame" x="283" y="0.0" width="44" height="128"/>
@@ -110,6 +116,9 @@
                                                 <state key="normal" title="Council of Ephesus">
                                                     <color key="titleColor" red="0.0" green="0.37254901959999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="showEvent2" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Tn-tN-eVt"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZKg-zX-u1K">
                                                 <rect key="frame" x="283" y="0.0" width="44" height="127.5"/>
@@ -151,6 +160,9 @@
                                                 <state key="normal" title="Rome is sacked by Genseric, King of the Vandals">
                                                     <color key="titleColor" red="0.0" green="0.37254901960784315" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="showEvent3" destination="BYZ-38-t0r" eventType="touchUpInside" id="kjy-22-IdB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nq6-Hh-AOP">
                                                 <rect key="frame" x="283" y="0.0" width="44" height="127.5"/>
@@ -203,6 +215,7 @@
                         <outlet property="timeLabel" destination="kc6-s1-53T" id="zFU-Uk-o1U"/>
                         <outlet property="tipLabel" destination="tC6-Yr-Fih" id="Qq6-92-BPX"/>
                         <segue destination="a2d-Wc-dfV" kind="presentation" identifier="gameOver" id="cHl-C4-0V0"/>
+                        <segue destination="lWk-lI-wDB" kind="presentation" identifier="eventWebView" id="eyp-yU-lGj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -260,6 +273,58 @@
             </objects>
             <point key="canvasLocation" x="876" y="133.5832083958021"/>
         </scene>
+        <!--Event Web View Controller-->
+        <scene sceneID="7lk-1V-iDq">
+            <objects>
+                <viewController id="lWk-lI-wDB" customClass="EventWebViewController" customModule="BoutTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hK6-be-YbY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OML-cn-0aq">
+                                <rect key="frame" x="0.0" y="47" width="375" height="620"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="webview_bar" translatesAutoresizingMaskIntoConstraints="NO" id="gBO-EP-d29">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="hPq-2g-dTD"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3Q-GX-CZp">
+                                <rect key="frame" x="336" y="9" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="x"/>
+                                <connections>
+                                    <action selector="close" destination="lWk-lI-wDB" eventType="touchUpInside" id="vNp-cZ-zG2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.1529411765" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OML-cn-0aq" firstAttribute="leading" secondItem="qip-ne-tjd" secondAttribute="leading" id="DkJ-ZA-VwL"/>
+                            <constraint firstItem="gBO-EP-d29" firstAttribute="top" secondItem="hK6-be-YbY" secondAttribute="top" id="GE1-Oa-5Ih"/>
+                            <constraint firstItem="OML-cn-0aq" firstAttribute="bottom" secondItem="qip-ne-tjd" secondAttribute="bottom" id="KWl-xf-mrN"/>
+                            <constraint firstItem="OML-cn-0aq" firstAttribute="trailing" secondItem="qip-ne-tjd" secondAttribute="trailing" id="P3I-a2-3xR"/>
+                            <constraint firstItem="gBO-EP-d29" firstAttribute="trailing" secondItem="qip-ne-tjd" secondAttribute="trailing" id="P73-cc-ttE"/>
+                            <constraint firstItem="OML-cn-0aq" firstAttribute="top" secondItem="gBO-EP-d29" secondAttribute="bottom" id="Y5k-y0-cnt"/>
+                            <constraint firstItem="gBO-EP-d29" firstAttribute="leading" secondItem="qip-ne-tjd" secondAttribute="leading" id="cq5-Sz-r01"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qip-ne-tjd"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="e3Q-GX-CZp" id="tuu-Yt-lWe"/>
+                        <outlet property="webView" destination="OML-cn-0aq" id="324-Vu-SRc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gwH-pj-qEP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904.79999999999995" y="902.69865067466276"/>
+        </scene>
     </scenes>
     <resources>
         <image name="down_full" width="158" height="457"/>
@@ -272,5 +337,6 @@
         <image name="up_full_selected" width="158" height="457"/>
         <image name="up_half" width="158" height="229"/>
         <image name="up_half_selected" width="158" height="229"/>
+        <image name="webview_bar" width="1333" height="167"/>
     </resources>
 </document>

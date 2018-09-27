@@ -52,9 +52,15 @@ class ViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         
-        // Set GameOverViewController.mainViewController so that it
-        // can call functions on this ViewController.
-        if let destVC = segue.destination as? GameOverViewController {
+        if let event = sender as? Event {
+            // If sender is an event and the destination is an EventWebViewController,
+            // then load the URL for the event in EventWebViewController
+            if let destVC = segue.destination as? EventWebViewController {
+                destVC.loadURL(event.url)
+            }
+        } else if let destVC = segue.destination as? GameOverViewController {
+            // Set GameOverViewController.mainViewController so that it
+            // can call functions on this ViewController.
             destVC.mainViewController = self
         }
     }
@@ -89,7 +95,24 @@ class ViewController: UIViewController {
         updateEventsUI()
     }
     
+    @IBAction func showEvent0() {
+        showEvent(index: 0)
+    }
+    
+    @IBAction func showEvent1() {
+        showEvent(index: 1)
+    }
+    
+    @IBAction func showEvent2() {
+        showEvent(index: 2)
+    }
+    
+    @IBAction func showEvent3() {
+        showEvent(index: 3)
+    }
+    
     @IBAction func nextRound() {
+        game.currentRound += 1
         startRound()
     }
     
@@ -101,6 +124,8 @@ class ViewController: UIViewController {
     
     /// Start the next round
     func startRound() {
+        // Setup the next round of events
+        game.setupCurrentRound()
         // Hide the "Next Round" button
         showNextRoundUI(false)
         // Update the events buttons descriptions
@@ -168,13 +193,24 @@ class ViewController: UIViewController {
     
     /// Update the UI to show/hide the "Next Round" button and any other UI changes.
     func showNextRoundUI(_ show: Bool) {
+        // Enable/disable eventButtons
+        for eventButton in eventButtons {
+            eventButton.isEnabled = show
+        }
+        
         nextRoundButton.isHidden = !show
         timeLabel.isHidden = show
+        
         if show {
             tipLabel.text = "Tap events to learn more"
         } else {
             tipLabel.text = "Shake to complete"
         }
     }
+    
+    // Show details of an event in a web view
+    func showEvent(index: Int) {
+        let event = game.eventsForCurrentRound[index]
+        performSegue(withIdentifier: "eventWebView", sender: event)
+    }
 }
-

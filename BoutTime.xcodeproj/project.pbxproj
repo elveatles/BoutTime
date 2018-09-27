@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		091E25CC215C282F00DBCCD3 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091E25CB215C282F00DBCCD3 /* GameOverViewController.swift */; };
+		091E25CE215C45E500DBCCD3 /* EventWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091E25CD215C45E500DBCCD3 /* EventWebViewController.swift */; };
 		09B9F88D215AFD16001B7253 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9F88C215AFD16001B7253 /* Event.swift */; };
 		09B9F88F215AFDE7001B7253 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9F88E215AFDE7001B7253 /* Game.swift */; };
 		09B9F891215AFFEB001B7253 /* PListConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9F890215AFFEB001B7253 /* PListConverter.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		091E25CB215C282F00DBCCD3 /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
+		091E25CD215C45E500DBCCD3 /* EventWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventWebViewController.swift; sourceTree = "<group>"; };
 		09B9F88C215AFD16001B7253 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		09B9F88E215AFDE7001B7253 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		09B9F890215AFFEB001B7253 /* PListConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PListConverter.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				09C0D5722159589E00EBA855 /* AppDelegate.swift */,
 				09C0D5742159589E00EBA855 /* ViewController.swift */,
 				09C0D5762159589E00EBA855 /* Main.storyboard */,
+				091E25CD215C45E500DBCCD3 /* EventWebViewController.swift */,
 				091E25CB215C282F00DBCCD3 /* GameOverViewController.swift */,
 				09C0D5792159589E00EBA855 /* Assets.xcassets */,
 				09C0D57B2159589E00EBA855 /* LaunchScreen.storyboard */,
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				091E25CE215C45E500DBCCD3 /* EventWebViewController.swift in Sources */,
 				09C0D5752159589E00EBA855 /* ViewController.swift in Sources */,
 				09B9F893215B01C1001B7253 /* PListError.swift in Sources */,
 				09B9F891215AFFEB001B7253 /* PListConverter.swift in Sources */,

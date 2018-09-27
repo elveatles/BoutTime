@@ -19,11 +19,13 @@ class Game {
     /// The total number of seconds for each round
     let totalSecondsPerRound = 60
     /// The current round number
-    var currentRound = 0
+    var currentRound = 1
     /// The number of rounds that were correct
     var numCorrect = 0
     /// The number of seconds that are left for the current round
     var secondsLeftForRound = 60
+    /// Flag if the current round has been checked
+    var currentRoundChecked = false
     /// The events for the current round
     var eventsForCurrentRound: [Event] = []
     
@@ -48,7 +50,7 @@ class Game {
     
     /// Start a new game.
     func newGame() {
-        currentRound = 0
+        currentRound = 1
         numCorrect = 0
         setupCurrentRound()
     }
@@ -63,6 +65,7 @@ class Game {
             fatalError("Game.setupCurrentRound: Game.allEvents must contain at least \(eventsPerRound) events.")
         }
         
+        currentRoundChecked = false
         secondsLeftForRound = totalSecondsPerRound
         
         // Pick random events for the current round
@@ -99,15 +102,15 @@ class Game {
         }
         
         let result = sortedEvents == eventsForCurrentRound
-        if result {
+        if !currentRoundChecked && result {
             numCorrect += 1
         }
         
-        currentRound += 1
-        setupCurrentRound()
+        currentRoundChecked = true
         
         return result
     }
+    
     
     /// Check if the current round timed out
     /// - Returns: true if the current round timed out.
