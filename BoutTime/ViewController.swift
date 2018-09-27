@@ -76,7 +76,10 @@ class ViewController: UIViewController {
     }
     
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
-        checkEvents()
+        // Check events on shake
+        if !game.currentRoundChecked {
+            checkEvents()
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
