@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     @IBOutlet weak var eventButton0: UIButton!
@@ -29,6 +30,10 @@ class ViewController: UIViewController {
     /// Contains eventButtons 0-4
     var eventButtons: [UIButton] = []
     
+    // Sounds
+    var correctPlayer: AVAudioPlayer?
+    var incorrectPlayer: AVAudioPlayer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -38,6 +43,8 @@ class ViewController: UIViewController {
         
         eventButtons = [eventButton0, eventButton1, eventButton2, eventButton3]
         nextRoundButton.isHidden = true
+        
+        loadSounds()
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         game = appDelegate.game
@@ -116,6 +123,47 @@ class ViewController: UIViewController {
         startRound()
     }
     
+    /// Load sounds to play back later
+    func loadSounds() {
+        do {
+            correctPlayer = try loadSound(name: "CorrectDing", ext: "wav")
+        } catch let error {
+            print("\(error)")
+        }
+        
+        do {
+            incorrectPlayer = try loadSound(name: "IncorrectBuzz", ext: "wav")
+        } catch let error {
+            print("\(error)")
+        }
+    }
+    
+    /**
+     Load a sound.
+     
+     - Parameter name: The bundle resource name.
+     - Parameter ext: The bundle resource file extension.
+     - Returns: The player created.
+     - Throws: `SoundError.invalidResource`
+                if a resource with name and ext does not exit.
+                `SoundError.unableToLoad`
+                if a player cannot be initialized from the resource.
+    */
+    func loadSound(name: String, ext: String) throws -> AVAudioPlayer {
+        guard let url = Bundle.main.url(forResource: name, withExtension: ext) else {
+            throw SoundError.invalidResource
+        }
+        
+        do {
+            let player = try AVAudioPlayer(contentsOf: url)
+            player.prepareToPlay()
+            return player
+        } catch let error {
+            print("\(error)")
+            throw SoundError.unableToLoad
+        }
+    }
+    
     /// Start a new game
     func startNewGame() {
         game.newGame()
@@ -185,8 +233,14 @@ class ViewController: UIViewController {
             
             if correct {
                 nextRoundButton.setBackgroundImage(#imageLiteral(resourceName: "next_round_success"), for: .normal)
+                if let player = correctPlayer {
+                    player.play()
+                }
             } else {
                 nextRoundButton.setBackgroundImage(#imageLiteral(resourceName: "next_round_fail"), for: .normal)
+                if let player = incorrectPlayer {
+                    player.play()
+                }
             }
         }
     }
