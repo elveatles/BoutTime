@@ -53,6 +53,7 @@
                                                     <constraint firstAttribute="width" secondItem="0Zj-7y-Yjh" secondAttribute="height" multiplier="158:457" id="geJ-oT-RnY"/>
                                                 </constraints>
                                                 <state key="normal" backgroundImage="down_full"/>
+                                                <state key="disabled" backgroundImage="down_full"/>
                                                 <state key="highlighted" backgroundImage="down_full_selected"/>
                                                 <connections>
                                                     <action selector="moveEventDown0" destination="BYZ-38-t0r" eventType="touchUpInside" id="lW6-bA-NSj"/>
@@ -84,6 +85,7 @@
                                                             <constraint firstAttribute="width" secondItem="4YB-hO-dss" secondAttribute="height" multiplier="158:229" id="xLN-pK-n8c"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="up_half"/>
+                                                        <state key="disabled" backgroundImage="up_half"/>
                                                         <state key="highlighted" backgroundImage="up_half_selected"/>
                                                         <connections>
                                                             <action selector="moveEventUp1" destination="BYZ-38-t0r" eventType="touchUpInside" id="AvT-jq-Qg9"/>
@@ -95,6 +97,7 @@
                                                             <constraint firstAttribute="width" secondItem="4aw-IK-GYO" secondAttribute="height" multiplier="158:229" id="sg4-33-r45"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="down_half"/>
+                                                        <state key="disabled" backgroundImage="down_half"/>
                                                         <state key="selected" backgroundImage="down_half_selected"/>
                                                         <state key="highlighted" backgroundImage="down_half_selected"/>
                                                         <connections>
@@ -129,6 +132,7 @@
                                                             <constraint firstAttribute="width" secondItem="RcX-YT-4gQ" secondAttribute="height" multiplier="158:229" id="BWf-Cn-tEK"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="up_half"/>
+                                                        <state key="disabled" backgroundImage="up_half"/>
                                                         <state key="highlighted" backgroundImage="up_half_selected"/>
                                                         <connections>
                                                             <action selector="moveEventUp2" destination="BYZ-38-t0r" eventType="touchUpInside" id="NGb-0Q-2vj"/>
@@ -140,6 +144,7 @@
                                                             <constraint firstAttribute="width" secondItem="GKE-Tg-iD2" secondAttribute="height" multiplier="158:229" id="3Sb-oR-GOR"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="down_half"/>
+                                                        <state key="disabled" backgroundImage="down_half"/>
                                                         <state key="highlighted" backgroundImage="down_half_selected"/>
                                                         <connections>
                                                             <action selector="moveEventDown2" destination="BYZ-38-t0r" eventType="touchUpInside" id="ngf-h8-dgy"/>
@@ -170,6 +175,7 @@
                                                     <constraint firstAttribute="width" secondItem="nq6-Hh-AOP" secondAttribute="height" multiplier="158:457" id="Px6-CO-2Gs"/>
                                                 </constraints>
                                                 <state key="normal" backgroundImage="up_full"/>
+                                                <state key="disabled" backgroundImage="up_full"/>
                                                 <state key="highlighted" backgroundImage="up_full_selected"/>
                                                 <connections>
                                                     <action selector="moveEventUp3" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eei-uh-Avf"/>
@@ -207,6 +213,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="downButton0" destination="0Zj-7y-Yjh" id="8XW-Df-Ynq"/>
+                        <outlet property="downButton1" destination="4aw-IK-GYO" id="EMT-Te-Wyq"/>
+                        <outlet property="downButton2" destination="GKE-Tg-iD2" id="fiL-io-NKt"/>
                         <outlet property="eventButton0" destination="c0l-Ha-ztB" id="qVD-bg-8qN"/>
                         <outlet property="eventButton1" destination="Rsa-3w-duL" id="KnZ-12-ycz"/>
                         <outlet property="eventButton2" destination="Yb8-MN-xfi" id="CN6-VT-LYt"/>
@@ -214,6 +223,9 @@
                         <outlet property="nextRoundButton" destination="3Xx-Rn-dD6" id="yNJ-kz-ydx"/>
                         <outlet property="timeLabel" destination="kc6-s1-53T" id="zFU-Uk-o1U"/>
                         <outlet property="tipLabel" destination="tC6-Yr-Fih" id="Qq6-92-BPX"/>
+                        <outlet property="upButton1" destination="4YB-hO-dss" id="VRL-ld-gEI"/>
+                        <outlet property="upButton2" destination="RcX-YT-4gQ" id="f2g-vL-TpI"/>
+                        <outlet property="upButton3" destination="nq6-Hh-AOP" id="AId-2g-De8"/>
                         <segue destination="a2d-Wc-dfV" kind="presentation" identifier="gameOver" id="cHl-C4-0V0"/>
                         <segue destination="lWk-lI-wDB" kind="presentation" identifier="eventWebView" id="eyp-yU-lGj"/>
                     </connections>

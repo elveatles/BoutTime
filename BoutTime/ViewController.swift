@@ -14,6 +14,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var eventButton1: UIButton!
     @IBOutlet weak var eventButton2: UIButton!
     @IBOutlet weak var eventButton3: UIButton!
+    @IBOutlet weak var downButton0: UIButton!
+    @IBOutlet weak var downButton1: UIButton!
+    @IBOutlet weak var downButton2: UIButton!
+    @IBOutlet weak var upButton1: UIButton!
+    @IBOutlet weak var upButton2: UIButton!
+    @IBOutlet weak var upButton3: UIButton!
     @IBOutlet weak var nextRoundButton: UIButton!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var tipLabel: UILabel!
@@ -29,6 +35,7 @@ class ViewController: UIViewController {
     var timer: Timer?
     /// Contains eventButtons 0-4
     var eventButtons: [UIButton] = []
+    var moveButtons: [UIButton] = []
     
     // Sounds
     var correctPlayer: AVAudioPlayer?
@@ -42,6 +49,14 @@ class ViewController: UIViewController {
         dateFormatter.timeStyle = .none
         
         eventButtons = [eventButton0, eventButton1, eventButton2, eventButton3]
+        moveButtons = [
+            downButton0,
+            downButton1,
+            downButton2,
+            upButton1,
+            upButton2,
+            upButton3
+        ]
         nextRoundButton.isHidden = true
         
         loadSounds()
@@ -250,6 +265,11 @@ class ViewController: UIViewController {
         // Enable/disable eventButtons
         for eventButton in eventButtons {
             eventButton.isEnabled = show
+        }
+        
+        // Enable/disable move buttons
+        for moveButton in moveButtons {
+            moveButton.isEnabled = !show
         }
         
         nextRoundButton.isHidden = !show
