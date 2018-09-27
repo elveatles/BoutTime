@@ -59,6 +59,13 @@ class ViewController: UIViewController {
             upButton2,
             upButton3
         ]
+        
+        // Round the top-left and bottom-left corners of the event buttons
+        for eventButton in eventButtons {
+            eventButton.layer.cornerRadius = 4
+            eventButton.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMinXMinYCorner]
+        }
+        
         nextRoundButton.isHidden = true
         
         loadSounds()
