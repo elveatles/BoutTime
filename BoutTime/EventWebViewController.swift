@@ -9,9 +9,13 @@
 import UIKit
 import WebKit
 
+/// View controller for displaying more details about an event in a web view
 class EventWebViewController: UIViewController {
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var webView: WKWebView!
+    
+    /// If loadURL is called, but viewDidLoad was not called yet,
+    /// this variable is used to store the url that will be loaded in viewDidLoad
     var urlToLoad: String?
     
     override func viewDidLoad() {

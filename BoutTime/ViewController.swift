@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 
+/// The main view controller where the game is played
 class ViewController: UIViewController {
     @IBOutlet weak var eventButton0: UIButton!
     @IBOutlet weak var eventButton1: UIButton!
@@ -35,6 +36,7 @@ class ViewController: UIViewController {
     var timer: Timer?
     /// Contains eventButtons 0-4
     var eventButtons: [UIButton] = []
+    /// Contains up/down arrow buttons that move the events
     var moveButtons: [UIButton] = []
     
     // Sounds

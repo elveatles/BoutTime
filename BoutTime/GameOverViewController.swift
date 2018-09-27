@@ -8,10 +8,13 @@
 
 import UIKit
 
+/// The "Game Over" screen
 class GameOverViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     
+    /// The object that manages the game
     var game: Game!
+    /// The ViewController that presented this controller
     weak var mainViewController: ViewController?
     
     override func viewDidLoad() {
