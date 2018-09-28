@@ -146,8 +146,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func nextRound() {
-        game.currentRound += 1
-        startRound()
+        // If this was the last round, show the "Game Over" screen,
+        // otherwise move on to the next round.
+        if game.gameOver() {
+            performSegue(withIdentifier: "gameOver", sender: nil)
+        } else {
+            game.currentRound += 1
+            startRound()
+        }
     }
     
     /// Load sounds to play back later
@@ -202,7 +208,7 @@ class ViewController: UIViewController {
         // Setup the next round of events
         game.setupCurrentRound()
         // Hide the "Next Round" button
-        showNextRoundUI(false)
+        showNextRoundUI(show: false, correct: false)
         // Update the events buttons descriptions
         updateEventsUI()
         
@@ -250,30 +256,16 @@ class ViewController: UIViewController {
         
         // Check if the events are in the correct order
         let correct = game.checkEvents()
-        
-        // If this was the last round, show the "Game Over" screen,
-        // otherwise show the "Next Round" button so the user can see if they got the answer correct.
-        if game.gameOver() {
-            performSegue(withIdentifier: "gameOver", sender: nil)
-        } else {
-            showNextRoundUI(true)
-            
-            if correct {
-                nextRoundButton.setBackgroundImage(#imageLiteral(resourceName: "next_round_success"), for: .normal)
-                if let player = correctPlayer {
-                    player.play()
-                }
-            } else {
-                nextRoundButton.setBackgroundImage(#imageLiteral(resourceName: "next_round_fail"), for: .normal)
-                if let player = incorrectPlayer {
-                    player.play()
-                }
-            }
-        }
+        showNextRoundUI(show: true, correct: correct)
     }
     
-    /// Update the UI to show/hide the "Next Round" button and any other UI changes.
-    func showNextRoundUI(_ show: Bool) {
+    /**
+     Update the UI to show/hide the "Next Round" button and any other UI changes.
+     
+     - Parameter show: If true, show the UI. If false, hide it.
+     - Parameter correct: If true, the user answer was correct. Only used show is true.
+    */
+    func showNextRoundUI(show: Bool, correct: Bool) {
         // Enable/disable eventButtons
         for eventButton in eventButtons {
             eventButton.isEnabled = show
@@ -288,6 +280,18 @@ class ViewController: UIViewController {
         timeLabel.isHidden = show
         
         if show {
+            if correct {
+                nextRoundButton.setBackgroundImage(#imageLiteral(resourceName: "next_round_success"), for: .normal)
+                if let player = correctPlayer {
+                    player.play()
+                }
+            } else {
+                nextRoundButton.setBackgroundImage(#imageLiteral(resourceName: "next_round_fail"), for: .normal)
+                if let player = incorrectPlayer {
+                    player.play()
+                }
+            }
+            
             tipLabel.text = "Tap events to learn more"
         } else {
             tipLabel.text = "Shake to complete"
